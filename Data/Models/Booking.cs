@@ -12,9 +12,9 @@ namespace FinalAppG.Data.Models
          public int? Duration { get; set; }
          public Boolean? IsBooked { get; set; }
 
-        public virtual ICollection<Hotel> Hotel { get; set; }   
-        public virtual ICollection<Trip> Trip { get; set; }
-        public virtual ICollection<SpecialTrip> SpecialTrips { get; set; }
+        public virtual ICollection<Hotel> Hotels { get; set; } = new List<Hotel>();
+        public virtual ICollection<Trip> Trips { get; set; } = new List<Trip>();
+        public virtual ICollection<SpecialTrip> SpecialTrips { get; set; } = new List<SpecialTrip>();
 
     }
 }

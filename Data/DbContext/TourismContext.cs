@@ -1,4 +1,5 @@
-﻿using FinalAppG.Data.Models;
+﻿using FinalAppG.Data.EnitiesConfigration;
+using FinalAppG.Data.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace FinalAppG.Data
@@ -27,7 +28,12 @@ namespace FinalAppG.Data
         public DbSet<Car> Cars {  get; set; }
         public DbSet<Booking> Bookings { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new BookingConfig());
+            base.OnModelCreating(modelBuilder);
 
+        }
 
     }    
 }

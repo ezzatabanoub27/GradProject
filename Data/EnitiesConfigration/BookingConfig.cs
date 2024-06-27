@@ -8,18 +8,18 @@ namespace FinalAppG.Data.EnitiesConfigration
     {
         public void Configure(EntityTypeBuilder<Booking> builder)
         {
-            //builder
-            //    .HasOne(e => e.hotel)
-            //    .WithMany(e => e.Bookings)
-            //    .HasForeignKey(s => s.hotelId);
-            //builder
-            //    .HasOne(e => e.trip)
-            //    .WithMany(e => e.Bookings)
-            //    .HasForeignKey(s => s.tripId);
-            //builder
-            //  .HasOne(e => e.specialTrip)
-            //  .WithMany(e => e.Bookings)
-            //   .HasForeignKey(s => s.specialTripId);
+            builder.HasMany(b => b.Trips)
+                    .WithMany(t => t.Bookings)
+                    .UsingEntity<Dictionary<string, object>>(
+                        "BookingTrip",
+                        j => j.HasOne<Trip>()
+                                .WithMany()
+                                .HasForeignKey("Trip_Id"),
+                        j => j.HasOne<Booking>()
+                                .WithMany()
+                                .HasForeignKey("BookingsId"));
+
+            
         }
     }
 }
