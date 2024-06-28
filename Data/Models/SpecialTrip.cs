@@ -2,7 +2,7 @@
 
 namespace FinalAppG.Data.Models
 {
-    public class SpecialTrip
+    public class SpecialTrip:ITrip
     {
         [Key]
         public int SpecialTrip_Id { get; set; }

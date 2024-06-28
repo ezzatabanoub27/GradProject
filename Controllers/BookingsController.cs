@@ -49,23 +49,13 @@ namespace FinalAppG.Controllers
                 var trip = _db.Trips.Find(tripid);
                 if (trip == null)
                 {
-                    continue;
+                    return BadRequest(new { message = "Couldn't Find trip with Id: " + tripid});
                 }
                 booking.Trips.Add(trip);
-                
-                var hotel = _db.Hotels.Find(trip.hotelId);
-                if (hotel == null) { continue; }
-                if (booking.Hotels.Contains(hotel))
-                {
-                    continue;
-                }
 
-                booking.Hotels.Add(hotel);
-
-                if (dto.isSingle) {
-                    hotel.Avilable_single_Rooms -= dto.rooms;
-                } else {
-                    hotel.Avilable_double_Rooms -= dto.rooms;
+                var result = handleBookingHotel(booking, trip, dto);
+                if (!result.Item1) {
+                    return BadRequest(new { message = result.Item2 });
                 }
             }
 
@@ -76,26 +66,14 @@ namespace FinalAppG.Controllers
                 var specialTrip = _db.SpecialTrips.Find(specialTripId);
                 if (specialTrip == null)
                 {
-                    continue;
+                    return BadRequest(new { message = "Couldn't Find specialTrip with Id: " + specialTripId });
                 }
                 booking.SpecialTrips.Add(specialTrip);
 
-                var hotel = _db.Hotels.Find(specialTrip.hotelId);
-                if (hotel == null) { continue; }
-                if (booking.Hotels.Contains(hotel))
+                var result = handleBookingHotel(booking, specialTrip, dto);
+                if (!result.Item1)
                 {
-                    continue;
-                }
-
-                booking.Hotels.Add(hotel);
-
-                if (dto.isSingle)
-                {
-                    hotel.Avilable_single_Rooms -= dto.rooms;
-                }
-                else
-                {
-                    hotel.Avilable_double_Rooms -= dto.rooms;
+                    return BadRequest(new { message = result.Item2 });
                 }
             }
 
@@ -103,7 +81,42 @@ namespace FinalAppG.Controllers
             _db.SaveChanges();
             return Ok(booking);
         }
-       
+
+        private (bool, string) handleBookingHotel(Booking booking, ITrip trip, BookingDTO dto)
+        {
+            var status = false;
+            var error = "";
+
+            var hotel = _db.Hotels.Find(trip.hotelId);
+            if (hotel == null || booking.Hotels.Contains(hotel))
+            {
+                error = "Failed to get the hotel of the trip";
+            }
+
+            booking.Hotels.Add(hotel);
+
+            if (dto.isSingle)
+            {
+                hotel.Avilable_single_Rooms -= dto.rooms;
+            }
+            else
+            {
+                hotel.Avilable_double_Rooms -= dto.rooms;
+            }
+
+            if (hotel.Avilable_single_Rooms < 0
+                || hotel.Avilable_double_Rooms < 0)
+            {
+                error = "The hotel doesn't have enough rooms";
+            }
+
+            if (error.Length == 0)
+            {
+                status = true;
+            }
+            return (status, error);
+        }
+
 
     }
 }
