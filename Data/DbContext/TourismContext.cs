@@ -31,6 +31,7 @@ namespace FinalAppG.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new BookingConfig());
+            modelBuilder.ApplyConfiguration(new HotelConfig());
             base.OnModelCreating(modelBuilder);
 
         }

@@ -19,7 +19,18 @@ namespace FinalAppG.Data.EnitiesConfigration
                                 .WithMany()
                                 .HasForeignKey("BookingsId"));
 
-            
+            builder.HasMany(b => b.Hotels)
+                    .WithMany(t => t.Bookings)
+                    .UsingEntity<Dictionary<string, object>>(
+                        "BookingHotel",
+                        j => j.HasOne<Hotel>()
+                                .WithMany()
+                                .HasForeignKey("Hotel_Id"),
+                        j => j.HasOne<Booking>()
+                                .WithMany()
+                                .HasForeignKey("BookingsId"));
+
+
         }
     }
 }

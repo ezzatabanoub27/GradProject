@@ -52,9 +52,52 @@ namespace FinalAppG.Controllers
                     continue;
                 }
                 booking.Trips.Add(trip);
+                
+                var hotel = _db.Hotels.Find(trip.hotelId);
+                if (hotel == null) { continue; }
+                if (booking.Hotels.Contains(hotel))
+                {
+                    continue;
+                }
+
+                booking.Hotels.Add(hotel);
+
+                if (dto.isSingle) {
+                    hotel.Avilable_single_Rooms -= dto.rooms;
+                } else {
+                    hotel.Avilable_double_Rooms -= dto.rooms;
+                }
             }
 
 
+            var specialTripIds = dto.specialTripIds;
+            foreach(var specialTripId in specialTripIds)
+            {
+                var specialTrip = _db.SpecialTrips.Find(specialTripId);
+                if (specialTrip == null)
+                {
+                    continue;
+                }
+                booking.SpecialTrips.Add(specialTrip);
+
+                var hotel = _db.Hotels.Find(specialTrip.hotelId);
+                if (hotel == null) { continue; }
+                if (booking.Hotels.Contains(hotel))
+                {
+                    continue;
+                }
+
+                booking.Hotels.Add(hotel);
+
+                if (dto.isSingle)
+                {
+                    hotel.Avilable_single_Rooms -= dto.rooms;
+                }
+                else
+                {
+                    hotel.Avilable_double_Rooms -= dto.rooms;
+                }
+            }
 
             await _db.Bookings.AddAsync(booking);
             _db.SaveChanges();
