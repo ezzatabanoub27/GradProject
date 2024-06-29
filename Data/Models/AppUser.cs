@@ -1,12 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
 
 namespace FinalAppG.Data.Models
 {
-    public class User
+    public class AppUser:IdentityUser
     {
-        [Key]
-        public int User_Id { get; set; }
-        [Required]
         [MaxLength(50)]
 
         public string FName { get; set; }
@@ -14,19 +12,19 @@ namespace FinalAppG.Data.Models
         [MaxLength(50)]
         public string LName { get; set; }
         [Required]
-        public string Government { get; set; }
+        public string? Government { get; set; }
 
         [MaxLength(255)]
-        public string Address { get; set; }
+        public string? Address { get; set; }
         public string Gender { get; set; }
 
-        public int Password { get; set; }
+        public string  Password { get; set; }
         public DateTime BirthDate { get; set; }
 
         public string Email { get; set; }
 
-        public int jobId { get; set; }
-        public Job job { get; set; } = null!;
+        public int? jobId { get; set; }
+        public Job? job { get; set; } = null!;
 
         public int? specialtripId {  get; set; }
         public SpecialTrip? specialTrip { get; set; } = null!;

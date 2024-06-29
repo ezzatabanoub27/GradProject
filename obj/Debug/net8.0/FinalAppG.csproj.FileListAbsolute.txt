@@ -134,3 +134,11 @@ D:\c# projects\FinalAppG\obj\Debug\net8.0\refint\FinalAppG.dll
 D:\c# projects\FinalAppG\obj\Debug\net8.0\FinalAppG.pdb
 D:\c# projects\FinalAppG\obj\Debug\net8.0\FinalAppG.genruntimeconfig.cache
 D:\c# projects\FinalAppG\obj\Debug\net8.0\ref\FinalAppG.dll
+D:\c# projects\FinalAppG\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\c# projects\FinalAppG\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\c# projects\FinalAppG\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\c# projects\FinalAppG\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\c# projects\FinalAppG\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\c# projects\FinalAppG\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\c# projects\FinalAppG\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\c# projects\FinalAppG\obj\Debug\net8.0\FinalAppG.sourcelink.json

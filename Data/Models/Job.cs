@@ -13,6 +13,6 @@ namespace FinalAppG.Data.Models
         public int EmployeeNum { get; set; }
 
 
-        public ICollection<User> Users { get; }= new List<User>();
+        public ICollection<AppUser> Users { get; }= new List<AppUser>();
     }
 }

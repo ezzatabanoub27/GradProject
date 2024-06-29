@@ -1,4 +1,5 @@
 ﻿using FinalAppG.Data;
+using FinalAppG.Data.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -56,5 +57,17 @@ namespace FinalAppG.Controllers
             return Ok(sportsH);
         }
 
+        [HttpGet("search")]
+
+        public async Task<ActionResult<IEnumerable<Hotel>>>GetSearch(string query)
+        {
+
+
+            if (string.IsNullOrWhiteSpace(query))
+                return await _db.Hotels.ToListAsync();
+            var result = await _db.Hotels.Where(i => i.Name.Contains(query) || i.Description.Contains(query)).ToListAsync();
+            return Ok(result);
+        }
+        
     }
 }

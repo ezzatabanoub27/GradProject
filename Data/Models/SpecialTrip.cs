@@ -16,7 +16,7 @@ namespace FinalAppG.Data.Models
         public int? hotelId { get; set; }
         public Hotel hotel { get; set; } = null!;
 
-       public ICollection<User> Users { get; }=new List<User>();
+       public ICollection<AppUser> Users { get; }=new List<AppUser>();
         public virtual ICollection<Booking> Bookings { get; } = new List<Booking>();
 
 

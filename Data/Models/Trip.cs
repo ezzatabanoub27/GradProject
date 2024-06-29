@@ -14,7 +14,7 @@ namespace FinalAppG.Data.Models
         public string Descripton { get; set; }
         public DateTime GoDate { get; set; }
         public DateTime BackDate { get; set; }
-
+        public double Cost { get; set; }
         public string Status { get; set; }
 
 

@@ -1,9 +1,10 @@
 ﻿using FinalAppG.Data.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace FinalAppG.Data
 {
-    public class TourismContext:DbContext
+    public class TourismContext:IdentityDbContext<AppUser>
     {
         public TourismContext(DbContextOptions<TourismContext> options): base(options) 
         { 
@@ -13,8 +14,8 @@ namespace FinalAppG.Data
         public DbSet<UserTrip> UserTrips { get; set; }
         public DbSet<UserReport> UserReports { get; set; }
         public DbSet<UserFeedBack> UserFeedBacks { get; set; }
-        public DbSet<User> Users { get; set; }
         public DbSet<TripFeedback> TripFeedbacks { get; set; }
+
         public DbSet<Trip> Trips { get; set; }
         public DbSet<TourGuid> TourGuids { get; set; }
         public DbSet<SpecialTrip> SpecialTrips { get; set; }
