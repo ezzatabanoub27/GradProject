@@ -1,6 +1,6 @@
 ﻿namespace FinalAppG.Data.DTOs
 {
-    public class BookingDTO
+    public class BookingSpecialTripDTO
     {
         public float Price { get; set; }
         public DateTime BookTime { get; set; }
@@ -10,9 +10,8 @@
         public bool isSingle { get; set; }
         public int rooms { get; set; }
 
-        public int? tripId { get; set; }
-        //public int? specialTripId { get; set; }
+        
+        public int? specialTripId { get; set; }
 
-   
     }
 }
