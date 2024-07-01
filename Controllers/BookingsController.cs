@@ -31,7 +31,7 @@ namespace FinalAppG.Controllers
             return Ok(Bookings);
         }
 
-        [HttpPost]
+        [HttpPost("Booking a Trip")]
 
         public async Task<IActionResult> AddBooking(BookingDTO dto)
         {
@@ -40,49 +40,102 @@ namespace FinalAppG.Controllers
                 Price = dto.Price,
                 BookTime = dto.BookTime,
                 Duration = dto.Duration,
-                IsBooked = dto.IsBooked
+                IsBooked = dto.IsBooked,
+               
             };
 
-            var tripIds = dto.tripIds;
-            foreach (var tripid in tripIds)
+            var tripId = dto.tripId;
+            var trip = _db.Trips.Find(tripId);
+            if (trip == null)
             {
-                var trip = _db.Trips.Find(tripid);
-                if (trip == null)
-                {
-                    return BadRequest(new { message = "Couldn't Find trip with Id: " + tripid});
-                }
-                booking.Trips.Add(trip);
+                return BadRequest(new { message = "Couldn't Find trip with Id: " + tripId});    
+            }
+            booking.Trips.Add(trip);
 
-                var result = handleBookingHotel(booking, trip, dto);
-                if (!result.Item1) {
-                    return BadRequest(new { message = result.Item2 });
-                }
+            var Result = handleBookingHotel(booking, trip, dto);
+            if (!Result.Item1) {
+                 return BadRequest(new { message = Result.Item2 });
             }
 
+             
+            await _db.Bookings.AddAsync(booking);
+            _db.SaveChanges();
+            return Ok(booking);
 
-            var specialTripIds = dto.specialTripIds;
-            foreach(var specialTripId in specialTripIds)
+
+        }
+
+        [HttpPost("Booking a SpeciaLTrip")]
+
+        public async Task<IActionResult> AddBookingSpeciaLTrip(BookingSpecialTripDTO dto)
+        {
+            var booking = new Booking
             {
-                var specialTrip = _db.SpecialTrips.Find(specialTripId);
-                if (specialTrip == null)
-                {
-                    return BadRequest(new { message = "Couldn't Find specialTrip with Id: " + specialTripId });
-                }
-                booking.SpecialTrips.Add(specialTrip);
+                Price = dto.Price,
+                BookTime = dto.BookTime,
+                Duration = dto.Duration,
+                IsBooked = dto.IsBooked,
 
-                var result = handleBookingHotel(booking, specialTrip, dto);
-                if (!result.Item1)
-                {
-                    return BadRequest(new { message = result.Item2 });
-                }
+            };
+
+            var SpecialTripId = dto.specialTripId;
+            var trip = _db.Trips.Find(SpecialTripId);
+            if (trip == null)
+            {
+                return BadRequest(new { message = "Couldn't Find trip with Id: " + SpecialTripId });
             }
+            booking.Trips.Add(trip);
+
+            var Result = handleBooking_s_Hotel(booking, trip, dto);
+            if (!Result.Item1)
+            {
+                return BadRequest(new { message = Result.Item2 });
+            }
+
 
             await _db.Bookings.AddAsync(booking);
             _db.SaveChanges();
             return Ok(booking);
+
+
         }
 
         private (bool, string) handleBookingHotel(Booking booking, ITrip trip, BookingDTO dto)
+        {
+            var status = false;
+            var error = "";
+
+            var hotel = _db.Hotels.Find(trip.hotelId);
+            if (hotel == null || booking.Hotels.Contains(hotel))
+            {
+                error = "Failed to get the hotel of the trip";
+            }
+
+            booking.Hotels.Add(hotel);
+
+            if (dto.isSingle)
+            {
+                hotel.Avilable_single_Rooms -= dto.rooms;
+            }
+            else
+            {
+                hotel.Avilable_double_Rooms -= dto.rooms;
+            }
+
+            if (hotel.Avilable_single_Rooms < 0
+                || hotel.Avilable_double_Rooms < 0)
+            {
+                error = "The hotel doesn't have enough rooms";
+            }
+
+            if (error.Length == 0)
+            {
+                status = true;
+            }
+            return (status, error);
+        }
+
+        private (bool, string) handleBooking_s_Hotel(Booking booking, ITrip trip, BookingSpecialTripDTO dto)
         {
             var status = false;
             var error = "";
