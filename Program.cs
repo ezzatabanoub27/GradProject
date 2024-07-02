@@ -28,7 +28,9 @@ builder.Services.AddCors();
 
 builder.Services.AddDbContext<TourismContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 //builder.Services.AddIdentityCore<User>(options => options.SignIn.RequireConfirmedAccount = false);
-builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<TourismContext>().AddDefaultTokenProviders();
+builder.Services.AddIdentity<AppUser, IdentityRole>(options=> options.SignIn.RequireConfirmedEmail = false)
+    .AddEntityFrameworkStores<TourismContext>()
+    .AddDefaultTokenProviders();
 
 builder.Services.addJWTAuth(builder.Configuration);
 
