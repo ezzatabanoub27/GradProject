@@ -1,5 +1,6 @@
 ﻿using FinalAppG.Data.DTOs;
 using FinalAppG.Data.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -70,36 +71,37 @@ namespace FinalAppG.Controllers
 
 
         [HttpPost("Login")]
-
-        public async Task<IActionResult> LoginUser([FromForm]Logindto dto)
+        public async Task<IActionResult> LoginUser([FromForm] Logindto dto)
         {
-           if (ModelState .IsValid)
-           {
+            if (ModelState.IsValid)
+            {
                 AppUser? user = await _userManager.FindByNameAsync(dto.username);
                 if (user != null)
                 {
-                    if (await _userManager.CheckPasswordAsync(user,dto.password))
+                    if (await _userManager.CheckPasswordAsync(user, dto.password))
                     {
+
+                        return Ok("token");
                         var claims = new List<Claim>();
 
                         claims.Add(new Claim(ClaimTypes.Name, dto.username));
-                        claims.Add(new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString()));
+                        claims.Add(new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()));
                         var roles = await _userManager.GetRolesAsync(user);
-                        foreach ( var  role in roles)
+                        foreach (var role in roles)
                         {
-                            claims.Add(new Claim(ClaimTypes.Role,role.ToString()));
+                            claims.Add(new Claim(ClaimTypes.Role, role.ToString()));
 
                         }
 
                         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:SecretKey"]));
-                        var sc = new SigningCredentials(key , SecurityAlgorithms.HmacSha256);
+                        var sc = new SigningCredentials(key, SecurityAlgorithms.HmacSha256Signature);
 
 
                         var token = new JwtSecurityToken(
                             claims: claims,
                             issuer: configuration["JWT:Issuer"],
                             audience: configuration["JWT:Audience"],
-                            expires: DateTime.Now.AddDays(10),
+                            expires: DateTime.UtcNow.AddDays(10),
                             signingCredentials: sc
                             );
 
@@ -118,11 +120,13 @@ namespace FinalAppG.Controllers
                 }
                 else
                 {
-                    ModelState.AddModelError("","UserName Or Passwor InValid");
+                    ModelState.AddModelError("", "UserName Or Passwor is  InValid");
                 }
-           }
-           return BadRequest();
+            }
+            return BadRequest();
         }
-      
+
+
+
     }
 }

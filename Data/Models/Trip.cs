@@ -2,7 +2,7 @@
 
 namespace FinalAppG.Data.Models
 {
-    public class Trip
+    public class Trip:ITrip
     {
 
 
@@ -18,8 +18,8 @@ namespace FinalAppG.Data.Models
         public string Status { get; set; }
 
 
-        public int hotelId { get; set;}
-        public Hotel hotel { get; set; } = null!;
+        public int? hotelId { get; set;}
+        public Hotel? hotel { get; set; }
         public List<UserTrip> userTrips { get; set; } = [];
         public List<TripFeedback> tripFeedbacks { get; set; } = [];
         public List<CarDriverTrip> carDriverTrips { get; set; } = [];

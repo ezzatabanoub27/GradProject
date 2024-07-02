@@ -22,30 +22,30 @@ namespace FinalAppG.Controllers
         [HttpGet("AllHotels")]
         public async Task<IActionResult> GetAllHotels()
         {
-            var AllHotels = await _db.Hotels.OrderBy(g=> g.Name).ToListAsync();
-                return Ok(AllHotels);
+            var AllHotels = await _db.Hotels.OrderBy(g => g.Name).ToListAsync();
+            return Ok(AllHotels);
         }
 
         [HttpGet("Swimming pool ")]
 
-        public async Task <IActionResult> GetSwimming()
+        public async Task<IActionResult> GetSwimming()
         {
-            var swimmeH = await _db.Hotels.Where(o=> o.Has_SwimmingPool==true ).OrderBy(g=>g.Name).ToListAsync();
+            var swimmeH = await _db.Hotels.Where(o => o.Has_SwimmingPool == true).OrderBy(g => g.Name).ToListAsync();
             return Ok(swimmeH);
         }
 
         [HttpGet("Free Wifi ")]
         public async Task<IActionResult> GetWifi()
         {
-            var wifiH = await _db.Hotels.Where(o=> o.Has_Free_Wifi==true).OrderBy(g=> g.Name).ToListAsync();
+            var wifiH = await _db.Hotels.Where(o => o.Has_Free_Wifi == true).OrderBy(g => g.Name).ToListAsync();
             return Ok(wifiH);
 
         }
 
         [HttpGet("See View ")]
-        public async Task <IActionResult> GetSee()
+        public async Task<IActionResult> GetSee()
         {
-            var SeeH = await _db.Hotels.Where(o=> o.Has_SeeView==true).OrderBy(g => g.Name).ToListAsync();
+            var SeeH = await _db.Hotels.Where(o => o.Has_SeeView == true).OrderBy(g => g.Name).ToListAsync();
             return Ok(SeeH);
 
         }
@@ -53,13 +53,13 @@ namespace FinalAppG.Controllers
         [HttpGet("Sports Gym")]
         public async Task<IActionResult> GetSports()
         {
-            var sportsH = await _db.Hotels.Where(o=> o.Has_Sports_Gym==true).OrderBy(g => g.Name).ToListAsync();
+            var sportsH = await _db.Hotels.Where(o => o.Has_Sports_Gym == true).OrderBy(g => g.Name).ToListAsync();
             return Ok(sportsH);
         }
 
         [HttpGet("search")]
 
-        public async Task<ActionResult<IEnumerable<Hotel>>>GetSearch(string query)
+        public async Task<ActionResult<IEnumerable<Hotel>>> GetSearch(string query)
         {
 
 
@@ -68,6 +68,14 @@ namespace FinalAppG.Controllers
             var result = await _db.Hotels.Where(i => i.Name.Contains(query) || i.Description.Contains(query)).ToListAsync();
             return Ok(result);
         }
-        
+
+
+        [HttpGet]
+
+        public async Task<IActionResult> GetHotels()
+        {
+            var hotel = await _db.Hotels.ToListAsync();
+            return Ok(hotel);
+        }
     }
 }

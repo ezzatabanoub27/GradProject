@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "D:\\c# projects\\FinalAppG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|d:\\c# projects\\finalappg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|d:\\c# projects\\finalappg\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|d:\\c# projects\\finalappg\\data\\dtos\\newuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|solutionrelative:data\\dtos\\newuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|d:\\c# projects\\finalappg\\extentions\\customjwtauthextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|solutionrelative:extentions\\customjwtauthextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|d:\\c# projects\\finalappg\\controllers\\hotelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|solutionrelative:controllers\\hotelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|d:\\c# projects\\finalappg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|d:\\c# projects\\finalappg\\finalappg.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|solutionrelative:finalappg.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|d:\\c# projects\\finalappg\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|d:\\c# projects\\finalappg\\data\\dbcontext\\tourismcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|solutionrelative:data\\dbcontext\\tourismcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|d:\\c# projects\\finalappg\\controllers\\tripscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,14 +43,6 @@
       "RelativeMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|solutionrelative:data\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|d:\\c# projects\\finalappg\\data\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|solutionrelative:data\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|d:\\c# projects\\finalappg\\data\\dbcontext\\tourismcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|solutionrelative:data\\dbcontext\\tourismcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|d:\\c# projects\\finalappg\\data\\models\\userfeedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|solutionrelative:data\\models\\userfeedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -55,20 +55,12 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240624233132_add_identity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|d:\\c# projects\\finalappg\\data\\enitiesconfigration\\bookingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|solutionrelative:data\\enitiesconfigration\\bookingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\c# projects\\FinalAppG\\Migrations\\20240612231311_testm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240612231311_testm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|d:\\c# projects\\finalappg\\data\\enitiesconfigration\\userconfigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|solutionrelative:data\\enitiesconfigration\\userconfigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|d:\\c# projects\\finalappg\\data\\enitiesconfigration\\specialtripconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|solutionrelative:data\\enitiesconfigration\\specialtripconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|d:\\c# projects\\finalappg\\data\\enitiesconfigration\\hotelconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -115,10 +107,6 @@
       "RelativeMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|solutionrelative:data\\enitiesconfigration\\jobconfigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|d:\\c# projects\\finalappg\\finalappg.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|solutionrelative:finalappg.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|d:\\c# projects\\finalappg\\migrations\\20240628190858_new.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{524A0464-FE71-4A24-99C3-2F0E1B3BBD57}|FinalAppG.csproj|solutionrelative:migrations\\20240628190858_new.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -134,8 +122,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FinalAppG.csproj",
+              "DocumentMoniker": "D:\\c# projects\\FinalAppG\\FinalAppG.csproj",
+              "RelativeDocumentMoniker": "FinalAppG.csproj",
+              "ToolTip": "D:\\c# projects\\FinalAppG\\FinalAppG.csproj",
+              "RelativeToolTip": "FinalAppG.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-12T16:33:49.974Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -146,7 +148,83 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "D:\\c# projects\\FinalAppG\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAowEkAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T20:19:49.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\c# projects\\FinalAppG\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\c# projects\\FinalAppG\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-01T16:32:59.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomJWTAuthExtention.cs",
+              "DocumentMoniker": "D:\\c# projects\\FinalAppG\\EXtentions\\CustomJWTAuthExtention.cs",
+              "RelativeDocumentMoniker": "EXtentions\\CustomJWTAuthExtention.cs",
+              "ToolTip": "D:\\c# projects\\FinalAppG\\EXtentions\\CustomJWTAuthExtention.cs",
+              "RelativeToolTip": "EXtentions\\CustomJWTAuthExtention.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwAsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T16:12:38.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\c# projects\\FinalAppG\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T21:28:27.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "JobsController.cs",
+              "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Controllers\\JobsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\JobsController.cs",
+              "ToolTip": "D:\\c# projects\\FinalAppG\\Controllers\\JobsController.cs",
+              "RelativeToolTip": "Controllers\\JobsController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAgwBwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T00:39:53.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TourismContext.cs",
+              "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Data\\DbContext\\TourismContext.cs",
+              "RelativeDocumentMoniker": "Data\\DbContext\\TourismContext.cs",
+              "ToolTip": "D:\\c# projects\\FinalAppG\\Data\\DbContext\\TourismContext.cs",
+              "RelativeToolTip": "Data\\DbContext\\TourismContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T16:33:50.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "20240628190421_last.cs",
               "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Migrations\\20240628190421_last.cs",
               "RelativeDocumentMoniker": "Migrations\\20240628190421_last.cs",
@@ -154,85 +232,12 @@
               "RelativeToolTip": "Migrations\\20240628190421_last.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T19:04:22.278Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Data\\Models\\AppUser.cs",
-              "RelativeDocumentMoniker": "Data\\Models\\AppUser.cs",
-              "ToolTip": "D:\\c# projects\\FinalAppG\\Data\\Models\\AppUser.cs",
-              "RelativeToolTip": "Data\\Models\\AppUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T18:25:06.154Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NewUserdto.cs",
-              "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Data\\DTOs\\NewUserdto.cs",
-              "RelativeDocumentMoniker": "Data\\DTOs\\NewUserdto.cs",
-              "ToolTip": "D:\\c# projects\\FinalAppG\\Data\\DTOs\\NewUserdto.cs",
-              "RelativeToolTip": "Data\\DTOs\\NewUserdto.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAuwBUAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T17:18:08.464Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\c# projects\\FinalAppG\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T21:28:27.691Z",
+              "WhenOpened": "2024-06-28T19:04:22.278Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "D:\\c# projects\\FinalAppG\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAADwv0MAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T17:14:55.83Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "JobsController.cs",
-              "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Controllers\\JobsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\JobsController.cs",
-              "ToolTip": "D:\\c# projects\\FinalAppG\\Controllers\\JobsController.cs",
-              "RelativeToolTip": "Controllers\\JobsController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwBwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T00:39:53.873Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HotelsController.cs",
-              "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Controllers\\HotelsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HotelsController.cs",
-              "ToolTip": "D:\\c# projects\\FinalAppG\\Controllers\\HotelsController.cs",
-              "RelativeToolTip": "Controllers\\HotelsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T00:52:48.907Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "TripsController.cs",
               "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Controllers\\TripsController.cs",
               "RelativeDocumentMoniker": "Controllers\\TripsController.cs",
@@ -244,7 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 26,
               "Title": "20240628190858_new.cs",
               "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Migrations\\20240628190858_new.cs",
               "RelativeDocumentMoniker": "Migrations\\20240628190858_new.cs",
@@ -256,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Logindto.cs",
               "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Data\\DTOs\\Logindto.cs",
               "RelativeDocumentMoniker": "Data\\DTOs\\Logindto.cs",
@@ -264,11 +269,12 @@
               "RelativeToolTip": "Data\\DTOs\\Logindto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T21:15:54.233Z"
+              "WhenOpened": "2024-06-28T21:15:54.233Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Job.cs",
               "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Data\\Models\\Job.cs",
               "RelativeDocumentMoniker": "Data\\Models\\Job.cs",
@@ -276,7 +282,8 @@
               "RelativeToolTip": "Data\\Models\\Job.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T16:33:51.318Z"
+              "WhenOpened": "2024-06-12T16:33:51.318Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -286,21 +293,10 @@
               "RelativeDocumentMoniker": "Data\\Models\\UserFeedBack.cs",
               "ToolTip": "D:\\c# projects\\FinalAppG\\Data\\Models\\UserFeedBack.cs",
               "RelativeToolTip": "Data\\Models\\UserFeedBack.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAWAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwAgAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T16:33:52.24Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TourismContext.cs",
-              "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Data\\DbContext\\TourismContext.cs",
-              "RelativeDocumentMoniker": "Data\\DbContext\\TourismContext.cs",
-              "ToolTip": "D:\\c# projects\\FinalAppG\\Data\\DbContext\\TourismContext.cs",
-              "RelativeToolTip": "Data\\DbContext\\TourismContext.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T16:33:50.38Z"
+              "WhenOpened": "2024-06-12T16:33:52.24Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -310,9 +306,10 @@
               "RelativeDocumentMoniker": "Data\\Models\\Hotel.cs",
               "ToolTip": "D:\\c# projects\\FinalAppG\\Data\\Models\\Hotel.cs",
               "RelativeToolTip": "Data\\Models\\Hotel.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAAABYAAAAvAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAIBWwBYAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T16:33:44.422Z"
+              "WhenOpened": "2024-06-12T16:33:44.422Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -322,25 +319,12 @@
               "RelativeDocumentMoniker": "Migrations\\20240624233132_add_identity.cs",
               "ToolTip": "D:\\c# projects\\FinalAppG\\Migrations\\20240624233132_add_identity.cs",
               "RelativeToolTip": "Migrations\\20240624233132_add_identity.cs",
-              "ViewState": "AQIAAKwAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-24T23:31:33.384Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "BookingConfig.cs",
-              "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Data\\EnitiesConfigration\\BookingConfig.cs",
-              "RelativeDocumentMoniker": "Data\\EnitiesConfigration\\BookingConfig.cs",
-              "ToolTip": "D:\\c# projects\\FinalAppG\\Data\\EnitiesConfigration\\BookingConfig.cs",
-              "RelativeToolTip": "Data\\EnitiesConfigration\\BookingConfig.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAwwA0AAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T16:33:52.974Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 15,
               "Title": "HotelConfig.cs",
               "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Data\\EnitiesConfigration\\HotelConfig.cs",
               "RelativeDocumentMoniker": "Data\\EnitiesConfigration\\HotelConfig.cs",
@@ -352,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "20240612231311_testm.cs",
               "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Migrations\\20240612231311_testm.cs",
               "RelativeDocumentMoniker": "Migrations\\20240612231311_testm.cs",
@@ -363,19 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SpecialTripConfig.cs",
-              "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Data\\EnitiesConfigration\\SpecialTripConfig.cs",
-              "RelativeDocumentMoniker": "Data\\EnitiesConfigration\\SpecialTripConfig.cs",
-              "ToolTip": "D:\\c# projects\\FinalAppG\\Data\\EnitiesConfigration\\SpecialTripConfig.cs",
-              "RelativeToolTip": "Data\\EnitiesConfigration\\SpecialTripConfig.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAIBJwBEAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T16:33:51.787Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "UserConfigration.cs",
               "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Data\\EnitiesConfigration\\UserConfigration.cs",
               "RelativeDocumentMoniker": "Data\\EnitiesConfigration\\UserConfigration.cs",
@@ -387,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 16,
               "Title": "20240612230329_test1.cs",
               "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Migrations\\20240612230329_test1.cs",
               "RelativeDocumentMoniker": "Migrations\\20240612230329_test1.cs",
@@ -398,7 +370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 17,
               "Title": "20240612225510_mig7.cs",
               "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Migrations\\20240612225510_mig7.cs",
               "RelativeDocumentMoniker": "Migrations\\20240612225510_mig7.cs",
@@ -409,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 18,
               "Title": "20240612224440_add-migration miga.cs",
               "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Migrations\\20240612224440_add-migration miga.cs",
               "RelativeDocumentMoniker": "Migrations\\20240612224440_add-migration miga.cs",
@@ -420,7 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 19,
               "Title": "20240612223421_migg.cs",
               "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Migrations\\20240612223421_migg.cs",
               "RelativeDocumentMoniker": "Migrations\\20240612223421_migg.cs",
@@ -431,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 20,
               "Title": "20240612221722_mig1.cs",
               "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Migrations\\20240612221722_mig1.cs",
               "RelativeDocumentMoniker": "Migrations\\20240612221722_mig1.cs",
@@ -442,7 +414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 21,
               "Title": "20240612220043_mig2.cs",
               "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Migrations\\20240612220043_mig2.cs",
               "RelativeDocumentMoniker": "Migrations\\20240612220043_mig2.cs",
@@ -453,7 +425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 22,
               "Title": "CarDriverTrip.cs",
               "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Data\\Models\\CarDriverTrip.cs",
               "RelativeDocumentMoniker": "Data\\Models\\CarDriverTrip.cs",
@@ -465,7 +437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 23,
               "Title": "Driver.cs",
               "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Data\\Models\\Driver.cs",
               "RelativeDocumentMoniker": "Data\\Models\\Driver.cs",
@@ -473,11 +445,12 @@
               "RelativeToolTip": "Data\\Models\\Driver.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T16:33:51.443Z"
+              "WhenOpened": "2024-06-12T16:33:51.443Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 24,
               "Title": "TripConfig.cs",
               "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Data\\EnitiesConfigration\\TripConfig.cs",
               "RelativeDocumentMoniker": "Data\\EnitiesConfigration\\TripConfig.cs",
@@ -489,7 +462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 25,
               "Title": "JobConfigration.cs",
               "DocumentMoniker": "D:\\c# projects\\FinalAppG\\Data\\EnitiesConfigration\\JobConfigration.cs",
               "RelativeDocumentMoniker": "Data\\EnitiesConfigration\\JobConfigration.cs",
@@ -498,18 +471,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T16:33:51.677Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "FinalAppG.csproj",
-              "DocumentMoniker": "D:\\c# projects\\FinalAppG\\FinalAppG.csproj",
-              "RelativeDocumentMoniker": "FinalAppG.csproj",
-              "ToolTip": "D:\\c# projects\\FinalAppG\\FinalAppG.csproj",
-              "RelativeToolTip": "FinalAppG.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-12T16:33:49.974Z"
             }
           ]
         }
