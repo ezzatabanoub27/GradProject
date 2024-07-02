@@ -7,11 +7,11 @@ namespace FinalAppG.Data.Models
     {
         [Key]
         public int Id { get; set; }
-        public int userId { get; set; }
+        public string  userId { get; set; }
         public int tripId { get; set; }
 
 
-        public User user { get; set; } = null!;
+        public AppUser user { get; set; } = null!;
         public Trip trip { get; set; } = null!;
     }
 }

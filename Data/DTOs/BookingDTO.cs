@@ -11,8 +11,6 @@
         public int rooms { get; set; }
 
         public int? tripId { get; set; }
-        //public int? specialTripId { get; set; }
-
-   
+        //public int? specialTripIds { get; set; }
     }
 }

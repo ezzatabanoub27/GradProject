@@ -29,7 +29,7 @@ namespace FinalAppG.Controllers
 
         }
         [HttpPost]
-         public async Task<IActionResult> AddTourGuid(TourGuidDTO dto)
+         public async Task<IActionResult> AddTourGuid([FromForm]TourGuidDTO dto)
         {
 
             var tourguid = new TourGuid
@@ -37,7 +37,8 @@ namespace FinalAppG.Controllers
                 Name = dto.Name,
                 Address = dto.Address,
                 Phone =  dto.Phone,
-                Gender= dto.Gender
+                Gender= dto.Gender,
+                tripId= dto.tripId
 
             };
             await _db.TourGuids.AddAsync(tourguid);

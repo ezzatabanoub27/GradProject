@@ -10,7 +10,6 @@
         public bool isSingle { get; set; }
         public int rooms { get; set; }
 
-        
         public int? specialTripId { get; set; }
 
     }

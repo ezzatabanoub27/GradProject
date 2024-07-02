@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FinalAppG.Data.EnitiesConfigration
 {
-    public class UserConfigration : IEntityTypeConfiguration<User>
+    public class UserConfigration : IEntityTypeConfiguration<AppUser>
     {
-        public void Configure(EntityTypeBuilder<User> builder)
+        public void Configure(EntityTypeBuilder<AppUser> builder)
         {
             builder
                 .HasOne(e => e.job)

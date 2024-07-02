@@ -41,32 +41,28 @@ namespace FinalAppG.Controllers
                 BookTime = dto.BookTime,
                 Duration = dto.Duration,
                 IsBooked = dto.IsBooked,
-               
             };
 
             var tripId = dto.tripId;
             var trip = _db.Trips.Find(tripId);
             if (trip == null)
             {
-                return BadRequest(new { message = "Couldn't Find trip with Id: " + tripId});    
+                return BadRequest(new { message = "Couldn't Find trip with Id: " + tripId });
             }
             booking.Trips.Add(trip);
 
             var Result = handleBookingHotel(booking, trip, dto);
-            if (!Result.Item1) {
-                 return BadRequest(new { message = Result.Item2 });
+            if (!Result.Item1)
+            {
+                return BadRequest(new { message = Result.Item2 });
             }
-
              
             await _db.Bookings.AddAsync(booking);
             _db.SaveChanges();
             return Ok(booking);
-
-
         }
-
+        
         [HttpPost("Booking a SpeciaLTrip")]
-
         public async Task<IActionResult> AddBookingSpeciaLTrip(BookingSpecialTripDTO dto)
         {
             var booking = new Booking
@@ -96,8 +92,6 @@ namespace FinalAppG.Controllers
             await _db.Bookings.AddAsync(booking);
             _db.SaveChanges();
             return Ok(booking);
-
-
         }
 
         private (bool, string) handleBookingHotel(Booking booking, ITrip trip, BookingDTO dto)
