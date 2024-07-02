@@ -31,7 +31,6 @@ namespace FinalAppG.Controllers
             return Ok(Bookings);
         }
 
-
         [HttpPost("Booking a Trip")]
 
         public async Task<IActionResult> AddBooking(BookingDTO dto)
@@ -42,7 +41,6 @@ namespace FinalAppG.Controllers
                 BookTime = dto.BookTime,
                 Duration = dto.Duration,
                 IsBooked = dto.IsBooked,
-
             };
 
             var tripId = dto.tripId;
@@ -58,17 +56,13 @@ namespace FinalAppG.Controllers
             {
                 return BadRequest(new { message = Result.Item2 });
             }
-
-
+             
             await _db.Bookings.AddAsync(booking);
             _db.SaveChanges();
             return Ok(booking);
-
-
         }
-
+        
         [HttpPost("Booking a SpeciaLTrip")]
-
         public async Task<IActionResult> AddBookingSpeciaLTrip(BookingSpecialTripDTO dto)
         {
             var booking = new Booking
@@ -98,8 +92,6 @@ namespace FinalAppG.Controllers
             await _db.Bookings.AddAsync(booking);
             _db.SaveChanges();
             return Ok(booking);
-
-
         }
 
         private (bool, string) handleBookingHotel(Booking booking, ITrip trip, BookingDTO dto)
