@@ -49,7 +49,7 @@ namespace FinalAppG.Controllers
 
 
                 };
-                IdentityResult result = await _userManager.CreateAsync(appuser);
+                IdentityResult result = await _userManager.CreateAsync(appuser, dto.Password);
 
                 if (result.Succeeded)
                 {
